@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Girlfriend? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Initial Heartbeat Button -->
+        <div id="heartbeatContainer" class="heartbeat-container">
+            <button id="heartbeatBtn" class="heartbeat-btn">
+                <span class="heart">❤️</span>
+            </button>
+            <p class="instruction">Click the heart to begin...</p>
+        </div>
+
+        <!-- Rain and Question Section (Hidden initially) -->
+        <div id="proposalSection" class="proposal-section hidden">
+            <!-- Heart Rain Container -->
+            <div id="heartRain" class="heart-rain"></div>
+
+            <!-- Question -->
+            <div class="question-container">
+                <h1 class="question">Will you be my girlfriend? 💕</h1>
+                
+                <!-- Buttons -->
+                <div class="button-container">
+                    <button id="noBtn" class="btn btn-no">No</button>
+                    <button id="yesBtn" class="btn btn-yes">Yes</button>
+                </div>
+            </div>
+        </div>
+
+    <div id="successMessage" class="success-message hidden">
+        <h1 class="success-text">🎉 YES! 🎉</h1>
+        <p class="success-subtitle">You just made me the happiest person! 💕</p>
+    
+        <div id="slideshow" class="slideshow-container">
+            <img id="slideshowImg" class="slideshow-img" src="" alt="Our memories 💕" />
+        </div>
+
+        <button id="restartBtn" class="restart-btn">Start Over</button>
+    </div>
+
+    <!-- Hidden Audio Element for Music -->
+    <audio id="celebrationMusic" style="display: none;">
+        <!-- Replace the src with your own music file -->
+        <source src="IV Of Spades - Come Inside of My Heart.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
